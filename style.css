@@ -33,6 +33,7 @@ body {
     width: 100%;
     margin:0 auto;
    background: rgb(159, 167, 198);
+
 }
 
 h1{
@@ -47,17 +48,8 @@ h2 {
 
 /* keyframes */
 
-@keyframes anim{
-    0% {background-color:  rgb(197, 205, 152);} /*Amarillo*/
-   25% {background-color: rgb(169, 152, 205);} /*Naranja*/
-   50% {background-color: rgb(205, 152, 160);} /*Negro*/
-   75% {background-color:  rgb(152, 205, 153);} /*Otra vez naranja*/
-  100% {background-color: rgb(165, 152, 205);} /*Otra vez amarillo*/
-}
 body {
-  animation-name: anim;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  
 }
 
 
@@ -366,7 +358,7 @@ margin-bottom: 2rem;
     border-radius: 20px;
 }
 .tarjeta__titulo {
-font-size: 2rem;
+font-size: 1.5rem;
 }
 
 .tarjeta__texto {
@@ -505,9 +497,7 @@ font-size: 2rem;
             justify-content: center;
             align-items: center;
             gap: 4rem;
-        }
-
-       
+        } 
         
     }
 
