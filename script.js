@@ -9,7 +9,7 @@ btn.addEventListener('click', () => {
 })
 
 function colorChange () {
-    return `hsl(${Math.floor(Math.random()*360)}, 35% ,70%)`
+    return `hsl(${Math.floor(Math.random()*360)}, 20% ,70%)`
 }
 
 

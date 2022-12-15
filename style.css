@@ -11,6 +11,13 @@ font-family: 'Rubik Distressed', cursive;*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tourney:wght@200&display=swap');
 
+
+
+
+
+/*generales */
+
+
 *{
     margin: 0;
     padding:0;
@@ -36,6 +43,29 @@ h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: .7em;
 }
+
+
+/* keyframes */
+
+@keyframes anim{
+    0% {background-color:  rgb(197, 205, 152);} /*Amarillo*/
+   25% {background-color: rgb(169, 152, 205);} /*Naranja*/
+   50% {background-color: rgb(205, 152, 160);} /*Negro*/
+   75% {background-color:  rgb(152, 205, 153);} /*Otra vez naranja*/
+  100% {background-color: rgb(165, 152, 205);} /*Otra vez amarillo*/
+}
+body {
+  animation-name: anim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+/** dom */ 
 header {
     width: 100%;
     display:flex;
@@ -87,7 +117,7 @@ height: 300px;
 
 .navbar__navegacion ul li {
     list-style-type: none;
- 
+        
 }
 
 .navbar__navegacion ul li a{
@@ -110,9 +140,9 @@ height: 300px;
 .hero {
     
     display:flex;
-    gap: .6em;
+    gap: 6em;
      /* background-color: #6D98BA; */
-    padding: 10rem;
+    padding: 2rem;
     margin-bottom: 4rem;
     
 
@@ -120,7 +150,7 @@ height: 300px;
 
 
 .hero__izq {
-    width: 50%;
+    width: 25%;
     padding: 0;
     flex-direction: column;
     display: flex;
@@ -160,11 +190,12 @@ margin-bottom: 2rem;
 }
 
 .titulo_movimiento{
-    font-size: 2.7em;
+    font-size: 2.4em;
 }
 
 .hero__der {
-    width: 80%;
+    width: 60%;
+    margin-left: 6rem;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -448,16 +479,19 @@ font-size: 2rem;
 ************* Mediaquerys **********
 *******************************/
     
-@media (max-width: 950px) {
+@media (max-width: 850px) {
     
+    .hero {
+    padding: 3rem;
+    }
         .navbar__navegacion {
-            display:none;
+            display:none;   
         }
         .navbar__btn {
             display: block;
             position: absolute;
             right: 30px;
-            top: 10px;
+            top: 20px;
             font-size:  2em;
 
         }
@@ -482,16 +516,29 @@ font-size: 2rem;
     html,body {
         overflow-x: hidden;
     }
-    
+    .hero__der {
+        margin: 0 auto;
+        padding: 5rem, 0;
+        gap: 2rem;
+        
+    }
     .hero {
         display:flex;
         flex-direction: column;
         align-items: center;
-        padding:2rem;
+        gap: 0;
+        margin-top: 2rem;
+        
+        
+    }
+    .hero__izq {
+        width: 70%;
+        
     }
     .hero__izq img {
         position: relative;
         z-index: 22;
+        width: 80%;
     }
   
 
@@ -499,15 +546,19 @@ font-size: 2rem;
 
 @media ( max-width: 500px) {
     .header__img {
-        height: 150px;
+        height: 200px;
         }
     .progs {
         padding-right: 70px;
     }
     .navbar__btn {
-            
-            font-size:  1em;
-    
+            font-size:  2em;
 }
+    .hero {
+        width: 100%;
+    }
+    .hero__der {
+        text-align: center;
+    }
 
 }
