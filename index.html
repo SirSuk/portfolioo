@@ -15,7 +15,7 @@
 
 </head>
 <body>
-    <header>
+    <header id="#home">
         <div class="caja__logo">
             <img 
             class="header__img"
@@ -24,9 +24,10 @@
         <nav class="navbar">
             <div class="navbar__navegacion">
             <ul>
-                <li>Home</li>
-                <li>Proyects</li>
-                <li>About Me</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#proyectos">Proyects</a></li>
+                <li><a href="#tecnologias">Mi Stack</a></li>
+                <li><a href="#contact"> Contact </a></li>
                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
 
                 <li><a href="#"><i class="fa-solid fa-code"></i></a></li>
@@ -41,9 +42,9 @@
     </header>
 
 
+    
 
-
-    <div class="hero">
+    <div class="hero" id="#aboutme">
         <section class="hero__der">
             <h1 class="titulo_movimiento"> Hi, I'm Radif</h1>
             <h2 class="hero__der__h2"> Diseñador Creativo</h2>
@@ -60,9 +61,14 @@
         </section>
         
 
-    </div>r
+    </div>
+
+
+
+
+
     <h2 class="progs__h2"> Mi stack de tecnologías</h2>
-    <div class="progs">
+    <div class="progs" id="#tecnologias">
         
         <i class="fa-brands fa-html5" id="icono"></i>
         <i class="fa-brands fa-css3-alt" id="icono"></i>    
@@ -80,15 +86,17 @@
     </div>
 
 
-    <main class="proyectos">
+    <main class="proyectos" id="proyectos">
         <section class="tarjetas">
             <div class="tarjeta">
                 <img src="./card6.png" alt="img" class="tarjeta__img">
-               <h2 class="tarjeta__titulo">Video App</h2>
-               <p class="tarjeta__texto">This app was created with Reactjs and TailwindCSS</p> 
+               <h2 class="tarjeta__titulo">EcoBustan</h2>
+               <p class="tarjeta__texto">Web creada con ReactJS, TailwindCSS</p> 
                <div class="tarjeta__btnbox">
-                <button class="tarjeta__btn tarjeta__btn1">Github</button>
-                <button class="tarjeta__btn tarjeta__btn2">Website</button>
+                   <a href="https://github.com/SirSuk/Ecohuerta-Bustan.git" class="tarjeta__btn tarjeta__btn1">Github Repo</a>
+                    <a href="#" class="tarjeta__btn tarjeta__btn2">Website</a>
+                   <!-- <button class="tarjeta__btn tarjeta__btn1"><a link="http://google.es"></a>Github</button>
+                <button class="tarjeta__btn tarjeta__btn2">Website</button> -->
             </div>
             </div>      
             <div class="tarjeta">

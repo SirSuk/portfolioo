@@ -9,7 +9,7 @@ font-family: 'Dosis', sans-serif;
 font-family: 'Rubik Distressed', cursive;*/
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ubuntu:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@200&display=swap');
 
 *{
     margin: 0;
@@ -22,19 +22,15 @@ body {
     height: 100%;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1em;
-<<<<<<< Updated upstream
-    color: white;
+    color: rgb(9, 9, 9);
     width: 100%;
-    margin:0 auto
-=======
-    color: rgba(0, 0, 0, 0.553);   
     margin:0 auto;
-    background-color: rgb(191, 210, 217);
->>>>>>> Stashed changes
+   background: rgb(159, 167, 198);
 }
 
 h1{
-    font-family: 'Great Vibes', sans-serif;
+    font-family: 'Tourney', cursive;
+
 }
 h2 {
     font-family: 'Josefin Sans', sans-serif;
@@ -45,13 +41,9 @@ header {
     display:flex;
     height: 100px;
     margin: 0 auto;
-<<<<<<< Updated upstream
-    background-color: #A5ABAF;
-=======
     /* background-color:#9AADBF; */
 
    
->>>>>>> Stashed changes
     margin-bottom: 0 !important;
 
 }
@@ -95,7 +87,13 @@ height: 300px;
 
 .navbar__navegacion ul li {
     list-style-type: none;
-    font-size: 17px;
+ 
+}
+
+.navbar__navegacion ul li a{
+    
+    font-size: 15px;
+    text-decoration: none;
     color: black
    
 }
@@ -113,13 +111,10 @@ height: 300px;
     
     display:flex;
     gap: .6em;
-<<<<<<< Updated upstream
-    background-color: #05AAE6;
-=======
      /* background-color: #6D98BA; */
->>>>>>> Stashed changes
-    padding: 2em;
-
+    padding: 10rem;
+    margin-bottom: 4rem;
+    
 
 }
 
@@ -133,9 +128,8 @@ height: 300px;
     align-items: center;
     
 }
-.titulo_movimiento{
-    font-size: 2.5em;
-}
+
+
 
 i {
     color: black;
@@ -165,7 +159,33 @@ margin-bottom: 2rem;
     border-radius: 20px;
 }
 
+.titulo_movimiento{
+    font-size: 2.7em;
+}
 
+.hero__der {
+    width: 80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    
+}
+
+
+
+.hero__der__h2 {
+    font-size: 1.2em;
+}
+
+.hero__der__p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+/*botondecolores*/
 
 .glow-on-hover {
     width: 220px;
@@ -227,65 +247,26 @@ margin-bottom: 2rem;
     100% { background-position: 0 0; }
 }
 
-.hero__der {
-    width: 80%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1em;
-    
-}
 
-/* .move{
-    font-size: 2.3em;
-    display:block;
-    font-family: monospace;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width: 12ch;
-    animation: typing 2s steps(12),
-    blink .5s infinite step-end alternate;
-    
-
-    @keyframes typing {
-        from {width: 0}
-    }
-
-    @keyframes blink {
-        50% {border-color:transparent}
-    }
-
-    overflow: hidden;
-} */
-
-
-.hero__der__h2 {
-    font-size: 1.2em;
-}
-
-.hero__der__p {
-    font-size: 1.2em;
-    text-align: center;
-}
 
 
 
 /******************************
 ************* Programas **********
 *******************************/
+
 .progs__h2 {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     margin-left: 1rem;
+    text-align:center;
+    font-family: 'Tourney', cursive;
 }
 
 .progs {
-<<<<<<< Updated upstream
-    background-color: #F9FBB2;
-=======
+
+    margin-top: 3rem;
     /* background-color: #9AADBF; */
->>>>>>> Stashed changes
-    padding: 3em;
+    padding: 2em;
     width: 100%;
     padding-left: 100px;
     display:grid;
@@ -293,28 +274,22 @@ margin-bottom: 2rem;
     grid-template-columns: repeat(5, 1fr); 
     
 }
-#icono:before {
-    font-size: 4em;
+#icono:before { 
+    font-size: 3em;
     
     
 }
+
 
 /******************************
 ************* Proyectos **********
 *******************************/
 
 .proyectos {
-<<<<<<< Updated upstream
-    background-color: #ADB3B6;
-=======
     /* background-color:#9AADBF; */
->>>>>>> Stashed changes
     /* background-color: #35CE8D; */
     width: 100%;
-    padding:4em 4em;
-   
-   
-  
+    padding:4em 4em; 
 }
 
 /******************************
@@ -338,7 +313,6 @@ margin-bottom: 2rem;
         text-transform: uppercase;
         font-size: 3rem;
         letter-spacing: 2px;
-  
 }
 
 
@@ -434,14 +408,9 @@ font-size: 2rem;
         display:flex;
         /* flex-direction: column; */
         justify-content: space-around;
-<<<<<<< Updated upstream
-        padding : 3em;
-        background-color: #A5ABAF;
-=======
         /* background-color: #6D98BA; */
        padding: 2rem;
         
->>>>>>> Stashed changes
     }
 
 .footer ul {
@@ -454,7 +423,7 @@ font-size: 2rem;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }Z
+    }
 
     .formbox__title{
         
@@ -539,4 +508,6 @@ font-size: 2rem;
             
             font-size:  1em;
     
+}
+
 }
