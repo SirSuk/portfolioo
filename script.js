@@ -1,11 +1,7 @@
 
-
-function lluvia() {
-
-}
-
-
 const btn= document.getElementById("btnColores");
+const domH1 = document.querySelector('.titulo_movimiento');
+const text = "Hi, I'm Radif"
 
 
 /*background changer */
@@ -19,8 +15,7 @@ function colorChange () {
 }
 
 
-const text = "Hi, I'm Radif"
-const domH1 = document.querySelector('.titulo_movimiento');
+/* auto text writer */
 
 let index = 0;
 
@@ -29,7 +24,7 @@ function writeText() {
     index++;
 
     if(index > text.length -1) {
-        index = 0;
+        index = 0; 
     }
 }
 
