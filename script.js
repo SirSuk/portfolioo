@@ -2,6 +2,12 @@
 const btn= document.getElementById("btnColores");
 const domH1 = document.querySelector('.titulo_movimiento');
 const text = "Hi, I'm Radif"
+const hamburguer = document.querySelector('#burguer');
+
+
+/* handle hamburguer */
+
+
 
 
 /*background changer */
