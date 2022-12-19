@@ -342,7 +342,7 @@ margin-bottom: 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: .5rem; 
+    gap: .8rem; 
 }
 
 .tarjeta__img:hover {filter: opacity(.5);}  
@@ -419,16 +419,22 @@ font-size: 1.5rem;
 ************* seccion estudios **********
 *******************************/
 
-.estudios h3 {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 2rem;
+.estudios {
+    display:flex;
+    width: 100%;
+    justify-content: space-evenly;
+    
 }
 
+.estudios h3{
+    font-size: 1rem;    
+}
 .estudios p {
-    text-align: center;
+    font-size: .6rem;
 }
+.estudios__otros{
 
+}
 /******************************
 ************* Footer **********
 *******************************/
